@@ -1,0 +1,2 @@
+DEFAULT_ADMIN_EMAIL = "admin@example.com"
+DEFAULT_ADMIN_PASSWORD = "P@ssw0rd"

@@ -1,0 +1,89 @@
+// Modal styles
+.modal-container {
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+}
+
+// Overrides the bootstrap colours
+$primary: hsl(194, 100%, 30%);
+$danger: hsl(14, 79%, 45%);
+$success: hsl(165, 100%, 30%);
+$info: hsl(192, 42%, 50%);
+$light: #f6f6f7;
+$white: #ffffff;
+
+// Overrides the date picker colours
+.dp__theme_light {
+  --dp-primary-color: hsl(194, 100%, 30%);
+  --dp-success-color: hsl(165, 100%, 30%);
+}
+
+// Imports bootstrap new colours
+@import "~bootstrap/scss/bootstrap";
+
+// Body styles
+body {
+  background-color: $light;
+}
+
+// Overrides button styles
+.btn,
+.btn:focus,
+.btn:hover {
+  color: $light;
+}
+
+.btn,
+.form-control,
+.form-select,
+.dp__input {
+  padding-block: 0.5rem;
+}
+
+// Overrides tag styles
+.ti-input {
+  padding-block: 0.3rem !important;
+}
+
+.list-group-item {
+  padding-block: 0.8rem;
+}
+.ti-selected-item {
+  background-color: $primary !important;
+}
+
+.ti-tag {
+  background-color: $primary !important;
+}
+
+.vue-tags-input {
+  margin-right: 0 !important;
+  max-width: none !important;
+}
+
+// Underline styles
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: $primary;
+  display: inline-block;
+}
+
+.underline-success::after {
+  background-color: $success;
+}
+
+// Custom flex class
+.flex-1 {
+  flex: 1;
+}
